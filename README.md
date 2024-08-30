@@ -1,5 +1,5 @@
 # Snowflake_End_to_End_Data_Engineering_Project
-Objective is to create an interactive dashboard that aggregates Air Quality Index(AQI) data from Indian Govt website(Data.gov.in) where users can access current and historical  air quality index and pollutant level at any given hour in the past.
+Objective is to create an interactive dashboard that aggregates Air Quality Index(AQI) data from Indian Govt website(Data.gov.in) where users can access current and historical  air quality index and pollutant level of any city in India at any given hour in the past.
 
 In this project, we ingest AQI(Air Quality Index) data from 'Data.gov.in' website through API and feed it to Snowflake in real-time that will power an in-built dashboard utility in Snowflake to obtain current and historical air quality index and pollutant level from all over India.
 
@@ -37,8 +37,18 @@ Snowflake components used in this project are<br />
 
 ➔We create aggregated fact table that stores pre-computed summary data derived from fact tables of consumption layer and is used in creating dashboard, we call this layer as Publish layer.<br />
 
-➔ The data available in Publish layer is used in creating Dashboard. Streamlit in Snowflake has been used to create dashboard where users can access real time and historical data from it.
+➔ The data available in Publish layer is used in creating Dashboard. Streamlit in Snowflake has been used to create dashboard where users can access real time and historical data from it.<br />
 
+<img width="1202" alt="Layered-Architecture-Standard-Names" src="https://github.com/user-attachments/assets/f0be8be0-a91f-4232-8f9b-47de54b59044"> <br />
+
+
+𝗞𝗲𝘆 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀:<br />
+
+● Understanding the project overview.
+● Creating GitHub Action Workflow using YAML extension.
+● Creating Snowflake Database Objects such as Tasks,Dynamic Tables(which inturn creates a DAG),Stages, UDF.
+● Implementing Star Schema Dimensional modelling to create fact and dimension tables.
+● Creating Streamlit in Snowflake Dashboard.
 
 
 
