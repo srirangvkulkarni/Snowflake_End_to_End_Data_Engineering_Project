@@ -1,4 +1,4 @@
-# Snowflake_End_to_End_Data_Engineering_Project
+# Snowflake End to End Data Engineering Project
 Objective is to create an interactive dashboard that aggregates Air Quality Index(AQI) data from Indian Govt website(Data.gov.in) where users can access current and historical  air quality index and pollutant level of any city in India at any given hour in the past.
 
 In this project, we ingest AQI(Air Quality Index) data from 'Data.gov.in' website through API and feed it to Snowflake in real-time that will power an in-built dashboard utility in Snowflake to obtain current and historical air quality index and pollutant level from all over India.
