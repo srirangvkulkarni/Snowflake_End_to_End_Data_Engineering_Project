@@ -44,11 +44,11 @@ Snowflake components used in this project are<br />
 
 𝗞𝗲𝘆 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀:<br />
 
-● Understanding the project overview.
-● Creating GitHub Action Workflow using YAML extension.
-● Creating Snowflake Database Objects such as Tasks,Dynamic Tables(which inturn creates a DAG),Stages, UDF.
-● Implementing Star Schema Dimensional modelling to create fact and dimension tables.
-● Creating Streamlit in Snowflake Dashboard.
+● Understanding the project overview.<br />
+● Creating GitHub Action Workflow using YAML extension.<br />
+● Creating Snowflake Database Objects such as Tasks,Dynamic Tables(which inturn creates a DAG),Stages, UDF.<br />
+● Implementing Star Schema Dimensional modelling to create fact and dimension tables.<br />
+● Creating Streamlit in Snowflake Dashboard.<br />
 
 
 
