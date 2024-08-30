@@ -1,5 +1,5 @@
 # Snowflake_End_to_End_Data_Engineering_Project
-Objective is to create an interactive dashboard that aggregates air quality index(AQI) data from Indian Govt website(Data.gov.in) where users can access current and historical  air quality index and pollutant level at any given hour in the past.
+Objective is to create an interactive dashboard that aggregates Air Quality Index(AQI) data from Indian Govt website(Data.gov.in) where users can access current and historical  air quality index and pollutant level at any given hour in the past.
 
 In this project, we ingest AQI(Air Quality Index) data from 'Data.gov.in' website through API and feed it to Snowflake in real-time that will power an in-built dashboard utility in Snowflake to obtain current and historical air quality index and pollutant level from all over India.
 
@@ -18,12 +18,33 @@ Snowflake is a cloud native data platform offered as a service(SaaS). Snowflake 
 Snowflake components used in this project are<br />
 ➔Virtual Warehouse<br />
 ➔Database & Schema<br />
-➔Dynamic Table to create DAG
-➔Internal Stage
-➔Snowflake User Defined Functions
-➔Snowflake File Formats
-➔Task
-➔Snowpark
-➔Streamlit in Snowflake
+➔Dynamic Table to create DAG<br />
+➔Internal Stage<br />
+➔Snowflake User Defined Functions<br />
+➔Snowflake File Formats<br />
+➔Task<br />
+➔Snowpark<br />
+➔Streamlit in Snowflake<br />
+
+<strong>Approach:</strong><br />
+➔ We write API Calls to fetch AQI data in JSON format from Indian Govt. website 'Data.gov.in' using Python. This python code is kept in **Github Action** to automate the process of fetching JSON files every hour and loading them to Snowflake Stages(Raw_data).<br />
+
+➔The data that has landed on Snowflake Stage is the raw data and we call it as Landing Layer.<br />
+
+➔The data is then flattened/cleaned and is made available in table format, we call this layer as Clean Layer.<br />
+
+➔Using Star Schema Dimensional Modelling approach we create fact and dimensional tables and data is now ready for consumption, we call this layer as Consumption Layer.<br />
+
+➔We create aggregated fact table that stores pre-computed summary data derived from fact tables of consumption layer and is used in creating dashboard, we call this layer as Publish layer.<br />
+
+➔ The data available in Publish layer is used in creating Dashboard. Streamlit in Snowflake has been used to create dashboard where users can access real time and historical data from it.
+
+
+
+
+
+
+
+
 
 
